@@ -1,4 +1,4 @@
-import { Resolver, Query, Mutation, Args } from '@nestjs/graphql';
+import { Resolver, Query, Mutation, Args, ID } from '@nestjs/graphql';
 import { Anime } from '../models/anime.model';
 import { CreateAnimeInput } from './dto/create-anime.input';
 import { UpdateAnimeInput } from './dto/update-anime-input';
@@ -21,5 +21,10 @@ export class AnimeResolver {
   @Mutation(() => Anime)
   updateAnime(@Args('input') input: UpdateAnimeInput) {
     return this.animeService.update(input);
+  }
+
+  @Mutation(() => Boolean)
+  deleteAnime(@Args('id', { type: () => ID }) id: string) {
+    return this.animeService.delete(id);
   }
 }
