@@ -5,23 +5,23 @@ import { Season, SeasonPeriod } from 'src/models/season.model';
 export class SeasonService {
   private seasons: Season[] = [
     {
-      id: '2024_WINTER',
-      year: 2024,
+      id: '2025_WINTER',
+      year: 2025,
       period: SeasonPeriod.WINTER,
     },
     {
-      id: '2024_SPRING',
-      year: 2024,
+      id: '2025_SPRING',
+      year: 2025,
       period: SeasonPeriod.SPRING,
     },
     {
-      id: '2024_SUMMER',
-      year: 2024,
+      id: '2025_SUMMER',
+      year: 2025,
       period: SeasonPeriod.SUMMER,
     },
     {
-      id: '2024_FALL',
-      year: 2024,
+      id: '2025_FALL',
+      year: 2025,
       period: SeasonPeriod.FALL,
     },
   ];
