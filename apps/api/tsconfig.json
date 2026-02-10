@@ -23,5 +23,6 @@
     "noFallthroughCasesInSwitch": false,
     "rootDir": "./src"
   },
-  "extends": "../../tsconfig.base.json"
+  "include": ["src/**/*.ts"],
+  "exclude": ["test", "dist", "node_modules"]
 }
