@@ -5,8 +5,8 @@
   "main": "index.js",
   "scripts": {
     "start:api": "pnpm --filter api start",
+    "start:prod": "node dist/apps/api/main.js",
     "build:api": "pnpm --filter api build",
-    "start:prod": "node dist/main.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
